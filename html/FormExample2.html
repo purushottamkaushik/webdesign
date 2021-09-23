@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Example 2 </title>
+
+    <style>
+        form {
+            display: flex;
+            flex-wrap: wrap ;
+            height: 300px;
+            width: 400px;
+            border: 2px solid darkcyan;
+        }
+        form > div {
+            margin-left: 10px;
+        }
+
+        input::placeholder {
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input:focus {
+            color: darkred;
+            border: none;
+            box-shadow: 2px 3px 4px red;
+
+        }
+    </style>
 </head>
 <body>
 
+<form name="loginForm" class="">
+    <div style="color: darkblue "> HOME | SERVICES | CONTACT </div>
+    <div>
+        <input type="text" placeholder="Enter Username">
+    </div>
+    <div>
+        <input type="password" placeholder="Enter Password">
+    </div>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+</form>
 
 </body>
 </html>
