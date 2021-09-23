@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Example 1</title>
+
+    <style>
+
+            .inputs {
+                width: 100px;
+                font-size: 20px;
+                color: forestgreen;
+                background-color: black;
+            }
+
+            .container {
+                width: 700px;
+                height: 700px;
+                background-color: #19d519;
+                color: white;
+                margin: 100px;
+                padding: 5px;
+                box-shadow: 5px 5px 5px red;
+                align-content: center;
+            }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <form name="frmSubmit" id="frmSubmit" method="post" >
+        <div>
+            <span class="inputs">Age : </span>        <input type="number" min="5" max="50" step="1" name="num"  id="num" value="12" placeholder="Enter Age" width="100"> <br>
+        </div>
+
+        <div>
+            <span class="inputs">Height :</span>        <input type="number" min="4.0" max="5.5" step="0.1"  id="height" value="4.2" placeholder="Enter Height" width="100"> <br>
+        </div>
+
+        Birthday : <input type="date" value="08-08-2012" min="01-01-2000" max="01-01-2020"  name="txtDob"> <br>
+        DateAndTimeCurrent <input type="datetime-local" value="08-08-2012" min="01-01-2000" max="01-01-2020"  name="txtDob"> <br>
+        RangeInput : <input type="range" max="10000" min="1000" value="1000" name="range" id="range"> <br>
+
+        Password Input : <input type="password"  name="password" id="password" required placeholder="Enter Password"> <br>
+
+        URL Input : <input type="url" name="url" id="url" > <br>
+        Email input : <input type="email" name="email" id="email">
+
+        Color Input : <input type="color" id="textColor" name="textColor">
+        <br>
+
+        File Input : <input type="file" multiple>
+        File Input with extension Restriction : <input type="file" accept=".pdf" multiple>
+        <input type="submit" value="Login">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        Radio Input : <input type="radio" name="gender" id="male" value="Male" checked> Male <input type="radio" name="gender" value="Female" id="female" > Female
+        <br>
+
+        Courses :
+        <input type="checkbox" value="JAVA" name="course"  checked> JAVA
+        <input type="checkbox" value="ADVJAVA" name="course" > ADVJAVA
+        <input type="checkbox" value="PYTHON" name="course" > PYTHON
+        <input type="checkbox" value="DATASCIENCE" name="course" > DATASCIENCE
+        <input type="checkbox" value="DATA_STRCUTURES" name="course" > DATA_STRCUTURES
+
+
+    </form>
+</div>
+</body>
+</html>

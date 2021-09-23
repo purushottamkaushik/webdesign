@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckBox Overflow Example </title>
+    <style>
+          div {
+              border : 2px solid darkcyan;
+              width: 150px;
+              float: right;
+              padding-right: 10px;
+              background-color: darkcyan;
+              color: yellowgreen;
+          }
+
+          li {
+              list-style-type: none;
+              display: flex;
+              flex-wrap: wrap;
+              padding-bottom: 10px;
+                overflow: auto;
+          }
+
+          #courses {
+              color: maroon;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="courses">Select Courses</h2>
+         <ul>
+             <li><input type="checkbox" value="Java">Core Java</li>
+             <li><input type="checkbox" value="Advancejava">Advance Java</li>
+             <li><input type="checkbox" value="Spring">Spring </li>
+             <li><input type="checkbox" value="Boot">Spring Boot</li>
+             <li><input type="checkbox" value="MicroServices">Microservice</li>
+             <li><input type="checkbox" value="Maven">Maven</li>
+         </ul>
+    </div>
+
+</body>
+</html>
